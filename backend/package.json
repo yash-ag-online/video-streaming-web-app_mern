@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "bun --watch ./src/app.ts",
     "lint": "eslint src --ext .ts",
+    "build": "tsc",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "vercel-build": "echo hello"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
@@ -27,6 +29,7 @@
   "dependencies": {
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
     "express": "^5.1.0"
   }
 }

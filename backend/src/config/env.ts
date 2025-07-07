@@ -1,3 +1,6 @@
+import { config } from 'dotenv';
+config();
+
 function required(key: string, fallback?: string): string {
   const value = process.env[key];
   if (!value && fallback === undefined) {
