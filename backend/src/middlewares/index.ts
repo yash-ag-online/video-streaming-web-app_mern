@@ -2,11 +2,11 @@ import type { Request, Response, NextFunction, ErrorRequestHandler } from 'expre
 import { type Application, json, urlencoded } from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-import corsOptions from '../config/cors.js';
-import ApiError from '../utils/ApiError.js';
-import ApiResponse from '../utils/ApiResponse.js';
-import { asyncHandler } from '../utils/AsyncHandler.js';
-import { HTTP_STATUS } from '../constants/http-status.js';
+import corsOptions from '../config/cors';
+import ApiError from '../utils/ApiError';
+import ApiResponse from '../utils/ApiResponse';
+import { asyncHandler } from '../utils/AsyncHandler';
+import { HTTP_STATUS } from '../constants/http-status';
 
 // Global Middlewares
 export const registerGlobalMiddleware = (app: Application) => {

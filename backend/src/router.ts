@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import ApiResponse from './utils/ApiResponse.js';
-import { asyncHandler } from './utils/AsyncHandler.js';
-import { HTTP_STATUS } from './constants/http-status.js';
+import ApiResponse from './utils/ApiResponse';
+import { asyncHandler } from './utils/AsyncHandler';
+import { HTTP_STATUS } from './constants/http-status';
 
 // Routes
 

@@ -1,8 +1,8 @@
 import express from 'express';
-import router from './router.js';
-import { errorHandler, notFoundHandler, registerGlobalMiddleware } from './middlewares/index.js';
-import ApiResponse from './utils/ApiResponse.js';
-import { HTTP_STATUS } from './constants/http-status.js';
+import router from './router';
+import { errorHandler, notFoundHandler, registerGlobalMiddleware } from './middlewares';
+import ApiResponse from './utils/ApiResponse';
+import { HTTP_STATUS } from './constants/http-status';
 
 const app = express();
 const PORT = process.env.PORT ?? 3000;

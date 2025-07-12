@@ -1,5 +1,5 @@
 import type { CorsOptions } from 'cors';
-import env from './env.js';
+import env from './env';
 
 const allowedOrigins = env.Client_URLs;
 

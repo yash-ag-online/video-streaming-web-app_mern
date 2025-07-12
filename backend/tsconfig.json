@@ -10,6 +10,13 @@
 
     // Bundler mode
     "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/*"]
+    },
+    "resolveJsonModule": true,
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "noEmit": true,
